@@ -3,3 +3,4 @@ LICENCE.md export-ignore
 README.md export-ignore
 gp.bat export-ignore
 addons/raycast_mult_3d/icon.png export-ignore
+.gitattributes export-ignore
