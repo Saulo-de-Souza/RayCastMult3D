@@ -62,7 +62,7 @@ var _material_debug: StandardMaterial3D = StandardMaterial3D.new()
 	set(value):
 		collide_with_bodies = value
 		if is_instance_valid(_params): _params.collide_with_bodies = value
-## Exibe no editor o raycast 3d.
+## Displays the raycast in 3D space in the editor.
 @export var show_debug: bool = true
 ## The amount of raycast penetration, that is, how many detections you want to receive.
 @export var max_result: int = 10
