@@ -96,17 +96,17 @@ signal intersect_ray(results: Array[RaycastMultResult])
 func _get_configuration_warnings() -> PackedStringArray:
 	var warnings = []
 	if from == null:
-		warnings.append("Favor escolher um Node3D para o parâmetro from")
+		warnings.append("Please select a Node3D for the 'from' parameter.")
 	if to == null:
-		warnings.append("Favor escolher um Node3D para o parâmetro to")
+		warnings.append("Please select a Node3D for the 'to' parameter.")
 	if not to == null and to == from:
-		warnings.append("As propriedades from e to não podem ter o mesmo node")
+		warnings.append("The 'from' and 'to' properties cannot be the same node.")
 	return warnings
 
 
 func _ready() -> void:
 	if not get_parent() is Node3D:
-		push_warning("RayCastMult3D tem que ser inserido em um nó 3D somente")
+		push_warning("RayCastMult3D must be have a Node3D parent.")
 	_init_var()
 	_create_debug()
 	
