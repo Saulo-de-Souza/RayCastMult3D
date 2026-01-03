@@ -4,6 +4,7 @@
 It supports **body and area collisions**, custom exclude lists, visual debugging, and flexible offset/margin settings.
 
 This plugin is especially useful for:
+
 - Advanced shooting or projectile detection.
 - Wall-penetrating sensors (multi-layer collision detection).
 - Environmental scanning or line tracing.
@@ -43,3 +44,11 @@ func _ready() -> void:
 func _on_ray_hits(results: Array[RaycastMultResult]) -> void:
     for hit in results:
         print("Hit object:", hit.collider, "at position:", hit.position)
+```
+
+---
+
+## ❤️ Support
+
+If this project helps you, consider supporting:
+https://github.com/sponsors/Saulo-de-Souza
